@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expensetrackers.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  </head>
+  <body>
+    <header class="head">
+      <img src="logo.png">
+      <h2 style="color: #2C0F46;">Pocket Tracker</h2>
+
+      <div class="user-icon-container">
+        <img src="user-circle.png" alt="User Icon" class="user-icon" onclick="toggleDropdown()">
+        <div id="dropdown" class="dropdown-content">
+          <a href="#" id="logout">Logout</a>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <h4 style="color: #2C0F46;">Your Balance</h4>
+      <h1 id="balance">&#8377;0.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">
+            +&#8377;0.00
+          </p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money-minus">
+            -&#8377;0.00
+          </p>
+        </div>
+      </div>
+
+      <div class="add-new-expense-cont">
+        <h3>Add New Transaction</h3>
+        <form id="form">
+          <table>
+            <tr>
+              <td><label for="text">Expense</label></td>
+              <td><input type="text" id="text" placeholder="Enter name" required /></td>
+            </tr>
+            <tr>
+              <td><label for="category">Category</label></td>
+              <td>
+                <select id="category" required>
+                  <option value="Select">Select</option>
+                  <option value="Salary">Salary</option>
+                  <option value="Pocket Money">Pocket Money</option>
+                  <option value="Clothes and Grooming">Clothes and Grooming</option>
+                  <option value="Food Expenses">Food Expenses</option>
+                  <option value="Home Expenses">Home Expenses</option>
+                  <option value="Books and Stationary">Books and Stationary</option>
+                  <option value="Others">Others</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="text">Description</label></td>
+              <td><input type="text" id="text" placeholder="Enter description"></td>
+            </tr>
+            <tr>
+              <td><label for="amount">Amount</label></td>
+              <td><input type="number" id="amount" placeholder="Enter amount (negative: expense, positive: income)" required /></td>
+            </tr>
+          </table>
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+
+      <h3>History</h3>
+      <div class="history-container">
+        <ul id="list" class="list">
+            <li class="minus">
+                <button class="delete-btn">x</button>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script src="trackerscript.js"></script>
+  </body>
+</html>
