@@ -1,4 +1,5 @@
 Expense Tracker - "Pocket Tracker"
+
 Pocket Tracker is a simple, intuitive, and user-friendly web application designed to help users manage their personal finances. The application allows users to record income and expenses, categorize transactions, and keep track of their overall balance. Built using HTML, CSS, and JavaScript, this project offers a dynamic interface that responds to user inputs, maintaining transaction history and updating financial information in real-time.
 
 Features
