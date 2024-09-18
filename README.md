@@ -6,7 +6,6 @@ Pocket Tracker is a simple, intuitive, and user-friendly web application designe
 - Add Transactions: Users can add income or expenses with a description, amount, and category.
 - Real-time Balance Update: The balance, income, and expenses are dynamically updated as transactions are added or deleted.
 - Transaction History: Users can view a list of all past transactions, categorized as income or expense, with details like date, time, and category.
-- Remove Transactions: Users can easily remove any transaction from their history with the click of a button.
 - User Profile & Logout: A basic user icon allows for session control with a logout option.
 - Responsive Design: The layout adapts to different screen sizes, ensuring a seamless experience on desktops, tablets, and smartphones.
 
